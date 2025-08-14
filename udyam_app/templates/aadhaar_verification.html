@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aadhaar Verification With OTP</title>
+</head>
+<body>
+
+<div class="verification-box">
+    <div class="verification-header">Aadhaar Verification With OTP</div>
+    <form method="POST">
+        {% csrf_token %}
+        
+        <label>1. Aadhaar Number / आधार संख्या</label>
+        {{ form.aadhaar_number }}
+        
+        <label>2. Name of Entrepreneur / उद्यमी का नाम</label>
+        {{ form.entrepreneur_name }}
+        
+        <label>
+            {{ form.consent_given }}
+            I give my consent...
+        </label>
+        
+        <button type="submit">Validate & Generate OTP</button>
+    </form>
+</div>
+
+</body>
+</html>

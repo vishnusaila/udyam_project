@@ -1,0 +1,62 @@
+{
+  "steps": [
+    {
+      "step": 1,
+      "title": "Aadhaar Verification",
+      "fields": [
+        {
+          "id": "aadhaar_number",
+          "name": "aadhaar",
+          "label": "Aadhaar Number",
+          "type": "text",
+          "placeholder": "Enter your 12-digit Aadhaar number",
+          "required": true,
+          "pattern": "^\\d{12}$",
+          "maxlength": 12
+        },
+        {
+          "id": "btn_generate_otp",
+          "name": "generate_otp",
+          "label": "Generate OTP",
+          "type": "button",
+          "required": false
+        },
+        {
+          "id": "otp_number",
+          "name": "otp",
+          "label": "Enter OTP",
+          "type": "text",
+          "placeholder": "Enter the OTP sent to your Aadhaar-linked mobile",
+          "required": true,
+          "pattern": "^\\d{6}$",
+          "maxlength": 6
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "PAN Verification",
+      "fields": [
+        {
+          "id": "pan_number",
+          "name": "pan",
+          "label": "PAN Number",
+          "type": "text",
+          "placeholder": "Enter your 10-character PAN",
+          "required": true,
+          "pattern": "^[A-Za-z]{5}[0-9]{4}[A-Za-z]{1}$",
+          "maxlength": 10
+        },
+        {
+          "id": "applicant_name",
+          "name": "name",
+          "label": "Applicant Name",
+          "type": "text",
+          "placeholder": "Enter your full name",
+          "required": true,
+          "maxlength": 100
+        }
+      ]
+    }
+  ]
+}

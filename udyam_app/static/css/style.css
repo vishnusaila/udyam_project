@@ -1,0 +1,15 @@
+.card {
+    border-radius: 6px;
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+.btn {
+    padding: 8px 18px;
+}
